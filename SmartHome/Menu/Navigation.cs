@@ -20,7 +20,7 @@ public class Navigation
         foreach (var rasd in select)
         {
 
-           
+
 
 
             if (rasd == select[index])
@@ -28,7 +28,7 @@ public class Navigation
 
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.BackgroundColor = ConsoleColor.White;
-                
+
                 Console.WriteLine(rasd.sectionName);
 
 
@@ -100,12 +100,12 @@ public class Navigation
 
     public static void SelectMenu(int index, List<MenuSection> select, Action map)
     {
-       
+
         map();
 
         foreach (var rasd in select)
         {
-            
+
 
 
 
@@ -114,7 +114,7 @@ public class Navigation
 
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.BackgroundColor = ConsoleColor.White;
-               
+
                 Console.WriteLine(rasd.sectionName);
 
 
@@ -175,7 +175,7 @@ public class Navigation
                 list[index].action();
 
                 list[index].index = 1;
-               // list[index].map = true;
+                // list[index].map = true;
                 SelectMenu(index, list, map);
 
                 index = 0;
@@ -199,7 +199,7 @@ public class Navigation
         string Greting = "████████████████████████████████████████\n████████████▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█████████\n█████▀▀░░░░░░░░░░░░░░░░░░░░░░░░░▀███████\r\n████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██████\r\n███▀░░░░░▄▄▄░░░░░░░░▄▄▀███▄▄░░░░░░░█████\r\n██░░░░░░▀▀▀███▄▄░░░█▄▄█▀█▀▀▀▀░▀░▄▄░▀▀███\r\n█░░▄▄░▄▄░▄░░░█▀░░░░░░░░░░▀▄▄▄█▀▀▄░▀█░░▀█\r\n█░░░░▄░▀▀░░▄█▀░░░░░░▄▄░░░░░░░▄▄▀██▄░█░░█\r\n██░░░██░░░▀▀█▄░░░▀▀▀▄▀░▄▄▄███▀░▄█░░░▀░▄█\r\n██▄░██▀█▀▄▄▄▄▄█▄▄▄▄▄▀▀█▀░░▄███▀█▀░░░▄▄██\r\n███░████▄█▄░░█░░▄█░░▄▄███▀▀▀█▄▀░░░░▄████\r\n███░▀██████████████▀▀▀▀█░░░▄▀▀░░░░▄█████\r\n███░░██▀█▀██▀█▀░░▀█░░░░█▄█▀░░░░░▄███████\r\n███░░░░▀▀▀██▄██▄▄██▀▀▀▀▀░░░░░▄▄█████████\r\n██▀░░░░░░░░░░░░░░░░░░░░░░▄▄▄████████████\r\n██▄░░░░░░░░░░░░░░░░░░▄▄█████████████████\r\n████▄░░░░░░░░░▄▄▄▄▄█████████████████████\r\n████████████████████████████████████████";
         Console.WriteLine(Greting);
 
-        Console.WriteLine(" Добро пожаловать в онлайн Кинотеатр ");
+        Console.WriteLine(" Добро пожаловать в онлайн в Умный дом!");
         Thread.Sleep(3000);
         Console.Clear();
         Console.ResetColor();
